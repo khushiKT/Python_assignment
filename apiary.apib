@@ -1,7 +1,7 @@
 FORMAT: 1A
 HOST: http://polls.apiblueprint.org/
 
-# Polls xxxx 
+# User Profile
 
 Polls is a simple API allowing consumers to view polls and vote in them.
 
@@ -78,3 +78,31 @@ form of choices.
                     }
                 ]
             }
+            
+            
+## Question Updation[/update]
+
+### Updating the questions[PUT]
++ Response 200 (application/json)
+
+   [
+            {
+                "question": "Favourite programming language?",
+                "published_at": "2015-08-05T08:40:51.620Z",
+                "choices": [
+                    {
+                        "choice": "Go",
+                        "votes": 3333
+                    }, {
+                        "choice": "Python",
+                        "votes": 1024
+                    }, {
+                        "choice": "Objective-C",
+                        "votes": 512
+                    }, {
+                        "choice": "Ruby",
+                        "votes": 256
+                    }
+                ]
+            }
+        ]
